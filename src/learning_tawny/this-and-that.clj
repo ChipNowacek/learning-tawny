@@ -20,3 +20,5 @@
 
 (defindividual aThis1 :fact (is isRelatedTo aThat1))
 
+; throws CompilerException clojure.lang.ArityException: Wrong number of args (1) passed to: repl/eval38514/fetch-doc--38515
+(l/print-ns-doc)
