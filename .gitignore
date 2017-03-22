@@ -12,3 +12,7 @@ pom.xml.asc
 .idea/
 *.iml
 resources/
+/learning-tawny.iml
+*.ttl
+!/this-and-that-test.ttl
+!/the-other.ttl
