@@ -13,7 +13,7 @@
 ;; basic ontology
 (defclass That)
 (defoproperty isRelatedTo)
-(defclass This :equivalent (some isRelatedTo That))
+(defclass This :equivalent (e/some isRelatedTo That))
 
 ;; individuals
 (defindividual aThat1 :type That)

@@ -1,0 +1,69 @@
+## This file was created by Tawny-OWL
+## It should not be edited by hand
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: the-other: <urn:absolute:the-other#>
+Prefix: this-and-that-test: <urn:absolute:this-and-that-test#>
+Prefix: this-and-that: <urn:absolute:this-and-that#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <urn:absolute:the-other>
+
+Import: <http://www.purl.org/ontolink/tawny>
+
+Annotations: 
+    <http://www.purl.org/ontolink/tawny#name> "the-other"@en,
+    rdfs:comment "The Other"@en
+
+AnnotationProperty: <http://www.purl.org/ontolink/tawny#name>
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+ObjectProperty: the-other:isRelatedTo
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "isRelatedTo"@en
+    
+    
+Class: the-other:That
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "That"@en
+    
+    
+Class: the-other:This
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "This"@en
+    
+    EquivalentTo: 
+        the-other:isRelatedTo some the-other:That
+    
+    
+Individual: the-other:aThat1
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "aThat1"@en
+    
+    Types: 
+        the-other:That
+    
+    
+Individual: the-other:aThis1
+
+    Annotations: 
+        <http://www.purl.org/ontolink/tawny#name> "aThis1"@en
+    
+    Facts:  
+     the-other:isRelatedTo  the-other:aThat1
+    
+    
